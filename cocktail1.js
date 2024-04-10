@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cart.length > 0) {
             const drinkId = cart[0].id; // Assuming cart[0] is the current drink
             fetch('http://192.168.1.102/api/order', {
+                console.log('Attempting to send order:', drinkId);
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
