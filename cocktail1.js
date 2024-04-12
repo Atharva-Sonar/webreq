@@ -1,6 +1,4 @@
-document.querySelector('.btn-success').addEventListener('click', () => {
-    $('#paymentModal').modal('show');
-});
+
 const menuItems = [
     { id: 1, name: 'Mojito', price: 149 },
     { id: 2, name: 'Cosmopolitan', price: 129 },
@@ -58,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('orderNow').addEventListener('click', () => {
         if (cart.length > 0) {
             const drinkId = cart[0].id; // Assuming cart[0] is the current drink
-            fetch('http://192.168.1.102/api/order', {
+            fetch('http://192.168.46.13/api/order', {
                 console.log('Attempting to send order:', drinkId);
                 method: 'POST',
                 headers: {
