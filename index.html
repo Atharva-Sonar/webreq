@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url('background.png'); /* Set to your background image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .social-icons {
+            position: absolute;
+            bottom: 200px; /* Adjust this to fine-tune icon position */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-left: 5%;
+        }
+        .social-icons a {
+            margin: 0 15px;
+        }
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .social-icons {
+                bottom: 120px; /* Raise the position for mobile */
+                flex-direction:column;
+                margin-left: 30%;
+                
+            }
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Social Media Icons below the 'Contact' section -->
+        <img src="./background.png" alt="" class="container">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/atharva_.sonar._5103/" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/atharvasonar5103/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/+918329677037" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://twitter.com/Atharvasonar513" target="_blank">
+                <img src="twitter.png" alt="X (Twitter)">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
