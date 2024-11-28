@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
+        /* General styles */
         body, html {
             height: 100%;
             margin: 0;
@@ -12,6 +13,8 @@
             justify-content: center;
             align-items: center;
         }
+
+        /* Main container styling */
         .container {
             position: relative;
             width: 100%;
@@ -21,53 +24,57 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
+        /* Social icons section */
         .social-icons {
             position: absolute;
-            bottom: 200px; /* Adjust this to fine-tune icon position */
+            bottom: 200px; /* Adjust to control vertical position */
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-left: 5%;
         }
+
         .social-icons a {
             margin: 0 15px;
         }
+
         .social-icons img {
             width: 50px;
             height: 50px;
             transition: transform 0.3s;
         }
+
         .social-icons img:hover {
-            transform: scale(1.1);
+            transform: scale(1.1); /* Slight zoom effect */
         }
 
-        /* Media query for smaller screens */
+        /* Responsive styles for smaller screens */
         @media (max-width: 600px) {
             .container {
-                background-image: url('image2.jpg');/* Change to your desired mobile background */
+                background-image: url('image2.jpg'); /* Mobile-friendly background */
             }
+
             .social-icons {
-                display: none; /* Hide the icons on smaller screens */
+                display: none; /* Hide social icons on smaller screens */
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Social Media Icons below the 'Contact' section -->
-        <img src="./background.png" alt="" class="container">
+        <!-- Social Media Icons -->
         <div class="social-icons">
             <a href="https://www.instagram.com/atharva_.sonar._5103/" target="_blank">
-                <img src="instagram.png" alt="Instagram">
+                <img src="instagram.png" alt="Follow on Instagram">
             </a>
             <a href="https://www.linkedin.com/in/atharvasonar5103/" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn">
+                <img src="linkedin.png" alt="Connect on LinkedIn">
             </a>
             <a href="https://wa.me/+918329677037" target="_blank">
-                <img src="whatsapp.png" alt="WhatsApp">
+                <img src="whatsapp.png" alt="Chat on WhatsApp">
             </a>
             <a href="https://twitter.com/Atharvasonar513" target="_blank">
-                <img src="twitter.png" alt="X (Twitter)">
+                <img src="twitter.png" alt="Follow on Twitter">
             </a>
         </div>
     </div>
